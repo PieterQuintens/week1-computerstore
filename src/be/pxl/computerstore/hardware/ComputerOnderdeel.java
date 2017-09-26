@@ -52,9 +52,9 @@ public abstract class ComputerOnderdeel {
 		String lastNumber = String.format("%d", rand.nextInt(999));
 		int vendorLength = vendor.length();
 		middleNumber.append(counter);
-		//articleNumber.append(middleNumber.toString());
+		// articleNumber.append(middleNumber.toString());
 		while (middleNumber.length() < 5) {
-				middleNumber.insert(0, "0");
+			middleNumber.insert(0, "0");
 		}
 		if (vendor.length() < 3) {
 			articleNumber.append(vendor.toUpperCase());
@@ -82,6 +82,16 @@ public abstract class ComputerOnderdeel {
 		articleNumber.append(lastNumber);
 
 		this.articleNumber = articleNumber.toString();
+	}
+
+	public String getShortDescription() {
+		StringBuilder shortDescription = new StringBuilder();
+		shortDescription.append(this.getArticleNumber() + " * ");
+		if (this instanceof Peripheral) {
+			shortDescription.append(this.getClass().getSimpleName() + " * ");
+		}
+		shortDescription.append(this.name + " * " + this.getPrice() + "€");
+		return shortDescription.toString();
 	}
 
 	public String getArticleNumber() {

@@ -17,6 +17,8 @@ public class Test {
 		ComputerCase computerCase = new ComputerCaseBuilder().vendor("Il").build();
 		System.out.println(computerCase.getArticleNumber());
 		
+		Mouse mouse = new Mouse("Logitech", "G920", 99.99);
+		
 		System.out.println(computerCase.toString());
 		System.out.println();
 		System.out.println(processor.toString());
@@ -26,6 +28,7 @@ public class Test {
 		System.out.println(ProcessorBuilder.CLOCK_SPEED);
 		System.out.println(ComputerCaseBuilder.WEIGHT);
 		
-		System.out.println(computerCase.getArticleNumber().substring(10)/*.matches("^[1-9]{3}$")*/);
+		System.out.println(mouse.getShortDescription());
+		System.out.println(mouse.getArticleNumber() + " * Mouse * " + mouse.getName() + " * " + mouse.getPrice() + "€");
 	}
 }
