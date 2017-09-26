@@ -25,5 +25,7 @@ public class Test {
 		System.out.println(ProcessorBuilder.PRICE);
 		System.out.println(ProcessorBuilder.CLOCK_SPEED);
 		System.out.println(ComputerCaseBuilder.WEIGHT);
+		
+		System.out.println(computerCase.getArticleNumber().substring(10)/*.matches("^[1-9]{3}$")*/);
 	}
 }

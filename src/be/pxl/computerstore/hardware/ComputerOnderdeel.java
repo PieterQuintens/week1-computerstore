@@ -52,7 +52,7 @@ public abstract class ComputerOnderdeel {
 		String lastNumber = String.format("%d", rand.nextInt(999));
 		int vendorLength = vendor.length();
 		middleNumber.append(counter);
-		articleNumber.append(middleNumber.toString());
+		//articleNumber.append(middleNumber.toString());
 		while (middleNumber.length() < 5) {
 				middleNumber.insert(0, "0");
 		}
