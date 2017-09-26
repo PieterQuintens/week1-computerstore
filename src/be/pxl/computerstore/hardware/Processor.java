@@ -1,6 +1,6 @@
 package be.pxl.computerstore.hardware;
 
-public class Processor extends ComputerOnderdeel {
+public class Processor extends ComputerComponent {
 	
 
 	private double clockspeed;

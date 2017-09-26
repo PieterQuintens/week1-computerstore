@@ -2,7 +2,7 @@ package be.pxl.computerstore.hardware;
 
 import be.pxl.computerstore.util.Dimension;
 
-public class ComputerCase extends ComputerOnderdeel {
+public class ComputerCase extends ComputerComponent {
 
 	private Dimension dimension;
 	private double weight;

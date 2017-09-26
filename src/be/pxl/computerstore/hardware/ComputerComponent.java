@@ -2,7 +2,7 @@ package be.pxl.computerstore.hardware;
 
 import java.util.Random;
 
-public abstract class ComputerOnderdeel {
+public abstract class ComputerComponent {
 
 	private String vendor;
 	private String name;
@@ -15,7 +15,7 @@ public abstract class ComputerOnderdeel {
 		counter++;
 	}
 
-	public ComputerOnderdeel(String vendor, String name, double price) {
+	public ComputerComponent(String vendor, String name, double price) {
 		setVendor(vendor);
 		setName(name);
 		setPrice(price);
